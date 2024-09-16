@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>MyCoin</title>
+</head>
+<body>
+
+    <div class="d-flex flex-column">
+        <div class="d-flex bg-primary text-white justify-content-center py-1">
+            <span class="fs-4 fw-bold">Crypto Price</span>
+        </div>
+
+        <div class="container mt-5 mb-5">
+            <table class="d-flex flex-column gap-3">
+                <!-- Table Head -->
+                <tr class="row text-center">
+                    <th class="col-1 text-start">
+                        <span class="text-secondary">
+                            #
+                        </span>
+                    </th>
+                    <th class="col-4">
+                        <span class="text-secondary">
+                            Coin
+                        </span>
+                    </th>
+                    <th class="col-3">
+                        <span class="text-secondary">
+                            Price
+                        </span>
+                    </th>
+                    <th class="col-1">
+                        <span class="text-secondary">
+                            24h %
+                        </span>
+                    </th>
+                    <th class="col-3 text-end">
+                        <span class="text-secondary">
+                            Market Cap
+                        </span>
+                    </th>
+                </tr>
+
+            </table>
+
+            <table class="d-flex flex-column tableHead gap-3" id="paginated-list">
+
+            </table>
+
+            <div class="pagination d-flex justify-content-center mt-5 mb-5">
+                
+                <div class="d-flex gap-2" id="pagination-numbers">
+
+                </div>
+            </div>
+            <div class="text-center">
+                <p class=""></p>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/all.js"></script>
+    <script src="../js/jquery-3.7.1.js"></script>
+    <script src="../js/axios.js"></script>
+    <script src="../js/coin.js"></script>
+</body>
+</html>
